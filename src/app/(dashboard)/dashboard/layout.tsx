@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import React, { ReactNode } from "react";
 
 export default function dashLayout({
@@ -12,16 +12,7 @@ export default function dashLayout({
 }) {
   return (
     <>
-      <nav className="flex justify-around w-full bg-blue-400">
-        <ul className="flex gap-5">
-          <li>
-            <Link href={"/next-level"}>Next Level</Link>
-          </li>
-          <li>
-            <Link href={"/p-hero"}>P Hero</Link>
-          </li>
-        </ul>
-      </nav>
+
       {children}
 
       <div className="w-full flex justify-around p-20">
